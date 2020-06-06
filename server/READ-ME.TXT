@@ -1,0 +1,64 @@
+comandos e passo a passo:
+- npm init -y
+- npm i express
+- criar o arquivo server.ts
+- import express
+caso não tenha a definicao de tipos (arquivo .d.ts), rodar o 
+comando: npm i @types/express -D (para desenvolvimento apenas)
+
+para rodar o arquivo typescript, n funciona o node server.ts. precisa
+instalar a dependencia ts-node e typescript com:
+-npm i typescript -D
+-npm i ts-node -D
+
+
+para executar uma dependencia q instalamos, rodar o comando: "npx", por exemplo, 
+para criar o arquivo de configuração do typescript, rodar o comando:
+"npx tsc --init" (sendo tsc=typecript)
+para iniciar o projeto:
+- "npx ts-node src/server.ts", que eh a mesma coisa q digitar o caminho todo ate
+o script "/node_modules/bin/ts-node src/server.ts"
+
+Para evitar de a cada atualização, termos de executar o "npx ts-node src/server.ts", 
+instalamos a dependencia em des para dar um refresh automatico:
+- "npm i ts-node-dev -D"
+
+para iniciar o projeto com mais facilidade, colocar no package.json
+o script "ts-node-dev src/server.ts", por exemplo:
+"dev": "ts-node-dev src/server.ts".
+Isso vai permitir rodar o projeto com :
+-"npm run dev"
+
+para o banco de dados, usar knex
+- "npm i knex"
+- 'npm i sqlite3'
+
+para exec as migrations, rodar:
+-'npx knex --knexfile knexfile.ts migrate:latest'
+
+para visualizar o banco de dados, baixar a extensao sqlite e abrir o database.sqlite com CTRL+SHIFT+P.
+
+para criar alguns dados no banco de dados, usar a seed:
+-'npx knex --knexfile knexfile.ts seed:run'
+
+para habilitar ou bloquear acessos, instalar o cors com seus tipos do typescript.
+-'npm i cors'
+-'npm i @types/cors -D'
+
+para lidar com upload de imagens:
+-'npm i multer'
+-'npm i @types/multer -D'
+
+-- para lidar com validação no back end, usar o celebrate, q eh
+baseado no joi:
+-'npm i celebrate'
+--p baixar os tipos do joi, como ja tem um @, precisa fazer assim:
+-'npm i @types/hapi__joi -D'
+**************************************************************************
+PROJETO REACT:
+para iniciar o projeto react com template de typescript, rodar o 
+comando, que vai executar, caso jah exista
+a dependencia create-react-app, senão vai baixar e executa-la:
+"npx create-react-app web --template=typescript"
+
+

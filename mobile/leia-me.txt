@@ -1,0 +1,44 @@
+--react native com expo
+instalar o expo-cli:
+'npm i -g expo-cli'
+'expo init mobile'
+--escolheer template com typescript+blank
+
+--rep da rocket seat p problemas com o expo
+:
+https://github.com/Rocketseat/expo-common-issues
+
+cor padrao da rocketseat: #7159c1
+
+--para se ter acesso às fonts do google fonts:
+-'expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto '
+
+--para realizar a navegacao entre telas, instalacao de botoes p navegar especificios
+, instalar:
+-'npm i @react-navigation/native'
+
+--para realizar animacoes, ligar com gestor, n deixar o usuario ir p areas unsafes etc:
+-'expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view'
+
+--instalar outra lib p navegar em pilhas:
+-'npm i @react-navigation/stack'
+
+--para usar mapas dentro do react-native, instalar:
+-'expo install react-native-maps'
+
+--baixar expo-constants:
+-'expo install expo-constants'
+
+--para o react-native entender svg:
+-'expo install react-native-svg'
+
+-'npm i axios'
+
+--para buscar a localizacao do usuario, 
+-'expo install expo-location'
+
+--para enviar email, usar o expo-mail-composer:
+-'expo install expo-mail-composer'
+
+--desafio p transformar em select o estado e a cidade:
+'npm i react-native-picker-select'

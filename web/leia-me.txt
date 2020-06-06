@@ -1,0 +1,26 @@
+para inserir icones (font awesome, feather icons, material icons etc) 
+dentro do react, usar o pacote react-icons:
+-'npm i react-icons'
+
+para colocar rotas no react, usar a lib react-router-dom, baixando
+tb o seu tipo p o typescript:
+-'npm i react-router-dom'
+-'npm install @types/react-router-dom -D'
+
+para usar o mapa no projeto, vamos o leaflet e react-leaftlet, pois
+eh menos burocratico p usar do q o google maps, mas vamos precisar
+importar o css do tutorial da pag oficial:
+-'npm i leaflet react-leaflet'
+-'npm install @types/react-leaflet -D'
+
+para fazer integrações com api rest, por ex, usar a lib axios:
+-'npm i axios'
+
+principais integrações de react com typescript:
+https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
+
+
+--para realizar o upload de imagens, baixar:
+-'npm i react-dropzone'
+
+--usar o yup p validação no front end.
